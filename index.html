@@ -364,7 +364,7 @@
                 <section class="message -right" style="margin-top: 40px;">
                     <div id="chat-cat" class="nes-balloon from-right font-pixel "
                         style="font-size: 10px;font-weight: unset;float: left;">
-                        <p>Good meowning. You lookin' for me. I've <a href="#about">something</a> for you.</p>
+                        <p>Good meowning. You lookin' for me. You have any <a href="#about">challenge</a> for me?</p>
                     </div>
                     <i class="nes-octocat animate" style="float: right;"></i>
                 </section>
@@ -464,10 +464,10 @@
             <div class="section">
                 <div class="section-title">TÓM TẮT</div>
                 <ul style="font-size: 11pt;">
-                    <b>System & MIS Officer / Data Engineer (Junior–Middle)</b>
-                    <span>với gần 3 năm kinh nghiệm vận hành CRM, Data Warehouse, ETL và Automation.
-                        Thành thạo Python, SQL, xây dựng pipeline, báo cáo hiệu suất và hệ thống hỗ trợ nghiệp vụ tài
-                        chính - năng lượng.</span>
+                    <b>System & MIS Officer</b>
+                    <span>với gần 3 năm kinh nghiệm vận hành, duy trì hệ thống CRM, Data Warehouse.
+                    Có kinh nghiệm sử dụng Python, SQL và Docker để thiết kế, triển khai hệ thống data pipeline/ETL và xây dựng các báo cáo đối soát chi phí, tài chính cho doanh nghiệp. 
+                    Tôi không ngại học hỏi, cập nhật kiến thức mới để ứng dụng cho công việc. Có khả năng chịu áp lực và mong muốn công việc mang tính thử thách.</span>
                 </ul>
             </div>
 
@@ -489,7 +489,7 @@
                         <li><b>Quản Lý Hệ Thống CRM:</b> Quản lý hồ sơ, người dùng, lập Template (excel, csv) và cập
                             nhật hồ
                             sơ khách
-                            hàng của đối tác cung cấp <i>(UOB/CitiBank, Standard Chartered, HSBC, VPBank, ...)</i> lên
+                            hàng của đối tác cung cấp lên
                             hệ
                             thống CRM.
                         </li>
@@ -567,11 +567,8 @@
                             chuẩn
                             hóa sẽ được
                             lưu tại PostgreSQL để phục vụ cho Dashboard (Flask, plotly) và các báo cáo khác.</li>
-                        <li><b>Personal Accounting:</b> (Dự án cá nhân) Dựa vào nghiệp vụ kế toán theo thông tư 200. Sử
-                            dụng
-                            Django để
-                            xây dựng Website CRUD cho chứng từ,
-                            tự động lập các sổ kế toán. Chứng từ đã hạch toán (định khoản) tự động tạo lập báo cáo như
+                        <li><b>Personal Accounting:</b> (Dự án cá nhân) Sử dụng Django để xây dựng Website CRUD cho chứng từ,
+                            tự động lập các sổ kế toán. Chứng từ đã hạch toán tự động tạo lập báo cáo như
                             KQKD,
                             LCTT,
                             BCĐKT,... Dashboard được tạo bởi Apexcharts. Tích hợp
@@ -640,12 +637,10 @@
             <div class="section">
                 <div class="section-title">SUMMARY</div>
                 <ul style="font-size: 11pt;">
-                    <b>System & MIS Officer / Data Engineer (Junior–Middle)</b>
-                    <span>with nearly 3 years of experience in CRM, Data Warehouse, ETL, and Automation operations.
-                        Proficient in Python, SQL, pipeline building, performance reporting, and business support
-                        systems
-                        for the
-                        finance and energy sectors.</span>
+                    <b>System & MIS Officer</b>
+                    <span>with nearly 3 years of experience in operating and maintaining CRM systems, Data Warehouses and Automation operations.
+                    I am proficient in using Python, SQL, and Docker to build data pipelines, develop ETL processes, and create financial and fee reconciliation reports for businesses.
+                    I can work well under pressure and actively seek out challenging work.</span>
                 </ul>
             </div>
 
@@ -666,8 +661,7 @@
                     <ul class="sublist">
                         <li><b>CRM System Management:</b> Manage profiles and users, create templates (Excel, CSV), and
                             update
-                            customer profiles for partner providers
-                            <i>(UOB/CitiBank, Standard Chartered, HSBC, VPBank, ...)</i> to the CRM system.
+                            customer profiles for partner providers to the CRM system.
                         </li>
                         <li><b>Data Warehousing:</b> In collaboration with MIS team, we utilize an ETL process to handle
                             data from CRM
@@ -751,9 +745,7 @@
                             other
                             reports.
                         </li>
-                        <li><b>Personal Accounting:</b> (Personal Project) Based on accounting principles according to
-                            Circular 200.
-                            Using Django to build a CRUD website for receipts, automatically generating accounting
+                        <li><b>Personal Accounting:</b> (Personal Project) Using Django to build a CRUD website for receipts, automatically generating accounting
                             ledgers.
                             Receipts that have been accounted for automatically generate reports such as Income
                             Statement,
@@ -941,12 +933,11 @@
             const chatCat = document.getElementById('chat-cat');
             const on2 = getComputedStyle(chatCat).getPropertyValue('--on').trim();
             if (on2 == 0) {
-                chatCat.innerHTML = `<p><a href="#endChat" onclick="playWow()">Sure!!  </a> 
-                Pay more<span style="font-size:16px;">🪙</span>, get more<span style="font-size:20px;">📈</span></p>`
+                chatCat.innerHTML = `<p>How <a href="#endChat" onclick="playWow()">interesting</a> will it be!</p>`
                 chatCat.classList.add('is-dark');
             } else {
                 chatCat.classList.remove('is-dark');
-                chatCat.innerHTML = `<p>Good meowning. You lookin' for me. I've <a href="#about">something</a> for you.</p>`
+                chatCat.innerHTML = `<p>Good meowning. You lookin' for me. You have any <a href="#about">challenge</a> for me?</p>`
             }
         }
         function changeAbout() {
